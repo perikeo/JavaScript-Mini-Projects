@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Responsiveness -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- SEO -->
+    <link rel="icon" href="" type="image/x-icon"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content="index, follow"/> <!-- Used to declare if the page is indexed and the links on the page should be followed for further indexing -->
+
+    <!-- GraphQL SEO -->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:locale" content=""/>
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:image" content=""/>
+
+    <!-- Basic CSS & JS loading -->
+    <link rel="stylesheet" href="styles.css" as="style" onload="preload"/> <!-- Preload is used for critical components so they load first -->
+    <script src="" async></script> <!-- Loads JS independently of the page content -->
+    <script src="script.js" defer></script> <!-- Loads JS after the page & DOM have completely loaded -->
+
+    <!-- Loading CDNs, Libraries & Frameworks -->
+    <link rel="stylesheet" href="cdn-content-link"/>
+    <link rel="stylesheet" href="cdn-bootstrap"/>
+    <script src="cdn-jquery" defer></script>
+    
+    <!-- Security -->
+    
+
+    <!-- TODO: dns-prefetch, preconnect, content-security-policy, manifest -->
+
+    <title>Drum Kit</title>
+  </head>
+  <body>
+    <section id="key_container">
+      <div class="key" data-value="1">
+        <kbd>A</kbd>
+        <span class="sound">Clap</span>
+      </div>
+      <div class="key" data-value="2">
+        <kbd>S</kbd>
+        <span class="sound">Hi-Hat</span>
+      </div>
+      <div class="key" data-value="3">
+        <kbd>D</kbd>
+        <span class="sound">Kick</span>
+      </div>
+      <div class="key" data-value="4">
+        <kbd>F</kbd>
+        <span class="sound">Open-Hat</span>
+      </div>
+      <div class="key" data-value="5">
+        <kbd>G</kbd>
+        <span class="sound">Bass</span>
+      </div>
+      <div class="key" data-value="6">
+        <kbd>H</kbd>
+        <span class="sound">Ride</span>
+      </div>
+      <div class="key" data-value="7">
+        <kbd>J</kbd>
+        <span class="sound">Snare</span>
+      </div>
+      <div class="key" data-value="8">
+        <kbd>K</kbd>
+        <span class="sound">Tom</span>
+      </div>
+      <div class="key" data-value="9">
+        <kbd>L</kbd>
+        <span class="sound">Tink</span>
+      </div>
+    </section>
+
+    <!-- There is meant to be no "data-value="10" -->
+    <section id="audio_container">
+      <audio src="https://cdn.freesound.org/previews/383/383009_3443778-lq.mp3" data-value="11"></audio>
+      <audio src="https://cdn.freesound.org/previews/399/399897_7682129-lq.mp3" data-value="12"></audio>
+      <audio src="https://cdn.freesound.org/previews/87/87553_377011-lq.mp3" data-value="13"></audio>
+      <audio src="https://cdn.freesound.org/previews/2/2030_2682-lq.mp3" data-value="14"></audio>
+      <audio src="https://cdn.freesound.org/previews/369/369201_5614036-lq.mp3" data-value="15"></audio>
+      <audio src="https://cdn.freesound.org/previews/696/696238_2253220-lq.mp3" data-value="16"></audio>
+      <audio src="https://cdn.freesound.org/previews/160/160838_2262092-lq.mp3" data-value="17"></audio>
+      <audio src="https://cdn.freesound.org/previews/737/737402_3797507-lq.mp3" data-value="18"></audio>
+      <audio src="https://cdn.freesound.org/previews/701/701112_15173053-lq.mp3" data-value="19"></audio>
+    </section>
+
+  </body>
+</html>
