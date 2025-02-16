@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Responsiveness -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- SEO -->
+    <link rel="icon" href="" type="image/x-icon"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content="index, follow"/> <!-- Used to declare if the page is indexed and the links on the page should be followed for further indexing -->
+
+    <!-- GraphQL SEO -->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:locale" content=""/>
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:image" content=""/>
+
+    <!-- Basic CSS & JS loading -->
+    <link rel="stylesheet" href="styles.css" as="style" onload="preload"/> <!-- Preload is used for critical components so they load first -->
+    <script src="" async></script> <!-- Loads JS independently of the page content -->
+    <script src="script.js" defer></script> <!-- Loads JS after the page & DOM have completely loaded -->
+
+    <!-- Loading CDNs, Libraries & Frameworks -->
+    <link rel="stylesheet" href="cdn-content-link"/>
+    <link rel="stylesheet" href="cdn-bootstrap"/>
+    <script src="cdn-jquery" defer></script>
+    
+    <!-- Security -->
+    
+
+    <!-- TODO: dns-prefetch, preconnect, content-security-policy, manifest -->
+
+    <title>Updating CSS Variables</title>
+  </head>
+  <body>
+    <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+  
+      <label for="blur">Blur:</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+  
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#ffc600">
+    </div>
+  
+    <img src="sixteen-miles-out-soN7d-WakDg-unsplash.jpg" height="900" width="750">
+  
+    <script>
+    </script>
+  
+  </body>
+</html>
